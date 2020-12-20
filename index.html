@@ -15,20 +15,22 @@
 			</div>
 			<hr>
 			<div class="card-body">
-				<form>
+				<form method="POST" action="traitement.php" id="myForm">
 					<div class="login-form">
 						<label for="login">Nom d'utilisateur</label>
-						<input type="text" name="login" id="login-id" placeholder="votre login">
+						<input type="text" name="login" id="login-id" placeholder="votre login" required="required">
+						<span id="loginError"></span>
 					</div>
 					<div class="password-form">
 						<label for="password">Mot de passe</label>
-						<input type="password" name="pass" id="password-id" placeholder="votre mot de passe">
+						<input type="password" name="pass" id="password-id" placeholder="votre mot de passe" required="required">
 						<img src="./icones/eye-slash.svg" alt="icone" class="eye" id="eye-id">
+						<span id="passWordError"></span>
 					</div>
 				</form>
 			</div>
 			<div class="card-footer">
-				<div class="btn btn-primary" id="button-id">VALIDER</div>
+				<div  type="submit" class="btn btn-primary" id="button-id">VALIDER</div>
 			</div>
 		</div>
 	</div>
