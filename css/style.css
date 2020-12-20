@@ -1,6 +1,7 @@
 body {
 	overflow: hidden;
-	background-color: rgba(0, 180, 255, .45);
+	/*background-color: rgba(0, 180, 255, .45);*/
+	background-color: hsla(220, 100%, 75%, .9);
 	font-family: arial;
 	font-size: 14px;
 }
@@ -22,7 +23,7 @@ body {
 	margin-left: 35%;
 	margin-top: 80px;
 	padding: 10px;
-	box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.6);
+	box-shadow: 1px 4px 8px hsl(120, 0%, 20%);
 }
 
 .card-header {
@@ -30,7 +31,7 @@ body {
 	font-weight: bold;
 	font-style: normal;
 	text-align: center;
-	color: rgba(0, 0, 255, 0.6);
+	color: hsl(240, 100%, 50%);;
 	padding: 20px 10px 0px 10px;
 }
 
@@ -95,7 +96,7 @@ input {
 }
 
 .btn-primary {
-	background-color: rgba(0, 0, 255, 0.6);
+	background-color: hsl(240, 100%, 50%);
 }
 
 .btn:hover {
@@ -110,4 +111,40 @@ input {
 	position: absolute;
 	top: 30px;
 	right: 10px;
+}
+
+.alert {
+	position: relative;
+	background-color: hsla(10, 100%, 70%, .5);
+	border-left: 5px solid hsl(10, 100%, 30%);
+	padding: 3px;
+	border-radius: 5px;
+}
+
+.alert h4 {
+	position: absolute;
+	text-align: center;
+	font-weight: bold;
+	opacity: .8;
+	top: -10px;
+	left: 0;
+	padding-left: 2px;
+}
+
+.close {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.alert p {
+	padding-left: 2px;
+	margin-top: 30px;
+	font-style: italic;
+}
+
+.d-none {
+	display: none;
 }
