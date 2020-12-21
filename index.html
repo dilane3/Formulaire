@@ -15,7 +15,12 @@
 			</div>
 			<hr>
 			<div class="card-body">
-				<form method="POST" action="traitement.php" id="myForm">
+				<form>
+					<div class="alert d-none">
+						<h4>ERREUR !</h4>
+						<span class="close">&times;</span>
+						<p>votre login ou mot de passe est errone !</p>
+					</div>
 					<div class="login-form">
 						<label for="login">Nom d'utilisateur</label>
 						<input type="text" name="login" id="login-id" placeholder="votre login" required="required">
