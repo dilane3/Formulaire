@@ -26,7 +26,7 @@ function f_valid(e)
 	if (login.value == '' && passWord.value == '')
 	{
 		e.preventDefault();
-		loginError.innerHTML = "Ce chams est obligatoire!";
+		loginError.innerHTML = "Ce champs est obligatoire!";
 		loginError.style.color = "red";
 		passWordError.innerHTML = "Ce champs est obligatoire!";
 		passWordError.style.color = "red";
